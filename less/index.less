@@ -1,1 +1,115 @@
 // Follow the order in the readme
+
+// Vars and Mixins
+@import "variables.less";
+@import "mixins.less";
+
+// General Styles Here
+@import "reset.less";
+@import "global.less";
+
+// Components Here
+@import "navigation.less";
+@import "footer.less";
+@import "home-page.less";
+
+body {
+    background: beige;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: @alignCenter;
+    // text-align: center;
+    // margin: 15px 0px 0px 65px;
+    // border: 3px solid green;
+    width: 99%;
+    // padding-left: 20px;
+}
+
+.content-section {
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
+   margin-left: 6px;
+    // border: 3px solid blue;
+    width: 58vw;
+}
+.groupOf3 {
+    // border: 2px dotted red;
+    // width: 60vw;
+    display: flex;
+
+    // margin-left: 11%;
+}
+.text-and-btn {
+    // border: 2px solid green;
+    margin: 4px;
+    width: 50%;
+}
+.border {
+    border: @dashedBorder
+}
+
+.btn-class {
+    padding: 10px 40px;
+    border-radius: 10px;
+    background-color: teal;
+    color: white;
+    width: 20vw;
+    cursor: pointer;
+  
+    &:hover {
+      // The compiled color returned is #006667 
+      background-color: darken(teal, 5%)
+      
+    }
+    font-size: 16px;
+    margin: 10px;
+    text-align: center;
+  }
+// =============================================================================
+
+@media (max-width: 700px) {
+    .welcome-container  {
+        display: flex;
+        flex-direction: column;
+        align-items: @alignCenter;
+        height: auto;
+    }
+    .content-section {
+    display: flex;
+    flex-direction: column;
+    align-items: @alignCenter;
+    // border: 3px solid blue;
+    width: 100vw;
+    }
+    .text-content {
+        // width: 80%;
+    }
+    #text-content-funbus {
+        width: 85%;
+        text-align: @alignCenter;
+        margin-left: 8%;
+    }
+    .groupOf3 {
+        display: flex;
+        flex-direction: column;
+        align-items: @alignCenter;
+    
+    }
+    .text-and-btn {
+        width: 80%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
