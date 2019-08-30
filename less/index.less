@@ -36,6 +36,40 @@ body {
     border: 3px solid blue;
     width: 58vw;
 }
+.groupOf3 {
+    border: 2px dotted red;
+    width: 70vw;
+    display: flex;
+
+    // margin-left: 11%;
+}
+.text-and-btn {
+    border: 2px solid green;
+    margin: 4px;
+    width: 40%;
+}
+.border {
+    border: @dashedBorder
+}
+
+.btn-class {
+    padding: 10px 40px;
+    border-radius: 10px;
+    background-color: teal;
+    color: white;
+    width: 20vw;
+    cursor: pointer;
+  
+    &:hover {
+      // The compiled color returned is #006667 
+      background-color: darken(teal, 5%)
+      
+    }
+    font-size: 16px;
+    margin: 10px;
+    text-align: center;
+  }
+// =============================================================================
 
 @media (max-width: 700px) {
     .welcome-container  {
@@ -59,10 +93,25 @@ body {
         text-align: center;
         margin-left: 8%;
     }
+    .groupOf3 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 15%;
+    
+    }
+    .text-and-btn {
+        width: 80%;
+    }
 }
-.border {
-    border: @dashedBorder
-}
+
+
+
+
+
+
+
+
 
 
 @dashedBorder: 1px dashed lightgray;
