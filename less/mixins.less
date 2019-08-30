@@ -1,1 +1,19 @@
 // Mixins in here
+@dashedBorder: 1px dashed lightgray;
+
+
+
+
+@alignCenter: center;
+@justifyCenter: center;
+
+
+.custom-layout(@justify, @align){
+	display: flex;
+	justify-content: @justify;
+	align-items: @align;
+}
+
+
+
+
